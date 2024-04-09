@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Univa Nova", "Just Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: white;
 }
@@ -36,7 +36,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: currentColor;
+  color: #2e2f42;
 }
 .navigation-item:hover,
 .navigation-item:focus {
@@ -78,13 +78,14 @@ ul {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 .benefits-names {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .benefits-text {
   font-size: 16px;
@@ -100,6 +101,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  color: #2e2f42;
 }
 .members-name {
   font-weight: 500;
@@ -107,8 +109,9 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #2e2f42;
 }
-.members-position {
+.members-profession {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -123,12 +126,14 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  color: #2e2f42;
 }
 .portfolio-item-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .portfolio-text {
   font-size: 16px;
