@@ -24,12 +24,20 @@ ul {
   letter-spacing: 0.02em;
   color: currentColor;
 }
+.navigation-item:hover,
+.navigation-item:focus {
+  color: #404bbf;
+}
 .navigation-address {
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.navigation-address:hover,
+.navigation-address:focus {
+  color: #404bbf;
 }
 .hero-title {
   font-size: 56px;
@@ -49,6 +57,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  cursor: pointer;
 }
 .benefits-names {
   font-weight: 500;
