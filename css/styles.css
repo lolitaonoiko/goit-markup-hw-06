@@ -17,7 +17,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .header-part-logo {
   font-family: "Raleway", sans-serif;
@@ -67,7 +66,6 @@ ul {
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
