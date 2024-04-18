@@ -23,6 +23,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .container {
   width: 1158px;
@@ -81,7 +82,6 @@ img {
   flex-direction: row;
   gap: 40px;
   margin-right: 332px;
-  padding: 24px 0;
 }
 .navigation-item {
   font-weight: 500;
@@ -89,6 +89,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .navigation-item:hover,
 .navigation-item:focus {
@@ -237,12 +238,10 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
-  border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  width: calc((100% - 72px) / 4);
 }
 .members-text {
   display: flex;
@@ -250,6 +249,7 @@ img {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  padding: 32px 0;
 }
 .members-name {
   font-weight: 500;
@@ -321,11 +321,10 @@ img {
   min-width: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 156px;
 }
 .footer-box {
   width: 264px;
-  margin: 0;
+  margin-left: 156px;
   padding: 0;
 }
 .logo-link-footer {
