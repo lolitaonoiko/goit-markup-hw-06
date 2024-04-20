@@ -218,7 +218,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 32px;
+  gap: 24px;
 }
 .team-list-item {
   border-radius: 0 0 4px 4px;
@@ -227,7 +227,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #ffffff;
-  width: calc((100% - 3 * 24px) / 3);
+  width: calc((100% - 3 * 24px) / 4);
 }
 .members-text {
   padding-top: 32px;
@@ -261,7 +261,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-text-box {
   border-bottom: 1px solid #e7e9fc;
