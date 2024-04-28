@@ -40,6 +40,8 @@ img {
   background-color: #ffffff;
   min-width: 100vh;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-box {
   display: flex;
@@ -95,10 +97,12 @@ img {
 .navigation-item:hover,
 .navigation-item:focus {
   color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-item::after {
+.first-navigation-link {
+  color: #404bbf;
+}
+.first-navigation-link::after {
   position: absolute;
   display: block;
   content: "";
@@ -107,6 +111,7 @@ img {
   height: 4px;
   background-color: #404bbf;
   margin-top: 20px;
+  bottom: -1px;
 }
 .address-part {
   font-style: normal;
@@ -132,8 +137,7 @@ img {
 .navigation-address:hover,
 .navigation-address:focus {
   color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ============= MAIN SECTION 1============ */
 .first-section-background {
@@ -145,7 +149,8 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ .jpg);
+    url(../images/people-office.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -183,8 +188,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ============== MAIN SECTION 2============= */
 .visually-hidden {
@@ -210,12 +214,14 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 .background-icons-benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 .benefits-names {
@@ -298,8 +304,10 @@ img {
 .icon-contact-link:hover,
 .icon-contact-link:focus {
   background-color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-icon {
+  fill: #f4f4fd;
 }
 /* =================== MAIN SECTION 4================ */
 .portfolio-title {
@@ -318,21 +326,23 @@ img {
   row-gap: 48px;
 }
 .portfolio-list-items:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.portfolio-list-items:hover .box-overlay {
-  transform: translateY(0);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+.portfolio-list-items:hover .text-overlay {
+  transform: translateY(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img-card {
   position: relative;
   overflow: hidden;
 }
-.box-overlay {
+.text-overlay {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
   position: absolute;
   top: 0;
   left: 0;
@@ -343,14 +353,7 @@ img {
   padding-left: 32px;
   padding-right: 32px;
   transform: translatey(100%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-.text-overlay {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-text-box {
   border-bottom: 1px solid #e7e9fc;
@@ -382,6 +385,7 @@ img {
 .footer-list {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .logo-link-footer {
   display: inline-block;
@@ -429,8 +433,7 @@ img {
 .footer-link-contact:hover,
 .footer-link-contact:focus {
   background-color: #31d0aa;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-contact {
   display: flex;
