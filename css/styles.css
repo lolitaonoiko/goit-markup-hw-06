@@ -1097,8 +1097,3 @@ input {
     display: none;
   }
 }
-@media screen and (min-width: 1158px) {
-  .menu-wrapper {
-    display: none;
-  }
-}
