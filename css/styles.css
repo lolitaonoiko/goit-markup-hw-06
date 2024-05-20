@@ -773,10 +773,10 @@ input {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-background.is-open {
+.modal-background.is-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 .modal-info {
   border-radius: 4px;
   width: 288px;
@@ -987,10 +987,10 @@ input {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .wrapper-open {
+.wrapper-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 .menu-content {
   max-width: 288px;
   margin: 0 auto;
