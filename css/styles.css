@@ -674,7 +674,7 @@ input {
 .subscribe-input {
   border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -732,6 +732,9 @@ input {
   }
   .footer-box {
     margin-bottom: 0;
+  }
+  .subscribe-input {
+    width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
