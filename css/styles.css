@@ -59,11 +59,6 @@ input {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.header-box {
-  margin: 0;
-  max-width: 767px;
-  padding: 0;
-}
 .navigation-header {
   display: flex;
   align-items: center;
@@ -78,7 +73,10 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 0;
 }
 .header-part-logo {
   font-family: "Raleway", sans-serif;
@@ -92,9 +90,11 @@ input {
 .burger-button {
   border: none;
   background-color: transparent;
-  padding: 0;
   line-height: 0;
-  padding: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-right: 0;
 }
 .navigation-item-box {
   display: flex;
@@ -167,8 +167,6 @@ input {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
   }
   .navigation-item-box {
     display: flex;
@@ -214,6 +212,10 @@ input {
   }
   .navigation-address {
     padding: 24px 0;
+    font-size: 16px;
+  }
+  .address-part {
+    margin: 0;
   }
 }
 /* ============= MAIN SECTION 1============ */
@@ -231,6 +233,7 @@ input {
   background-size: cover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+  max-width: 320px;
 }
 .hero-title {
   font-weight: 700;
@@ -283,6 +286,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-mb.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
   }
   .hero-title {
     max-width: 496px;
@@ -306,8 +312,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
   }
   .hero-title {
     font-size: 56px;
@@ -340,7 +347,6 @@ input {
 .benefits-list-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-bottom: 72px;
 }
@@ -348,7 +354,7 @@ input {
   margin-bottom: 0;
 }
 .background-icons-benefits {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: #f4f4fd;
@@ -357,7 +363,6 @@ input {
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
-  display: none;
 }
 .benefits-names {
   font-weight: 700;
@@ -383,6 +388,7 @@ input {
   .benefits-list-items {
     width: 356px;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -392,9 +398,6 @@ input {
   .benefits-list {
     flex-wrap: nowrap;
   }
-  .benefits-list-items {
-    display: inline-block;
-  }
   .benefits-names {
     font-weight: 500;
     font-size: 20px;
@@ -402,6 +405,9 @@ input {
   .benefits-text {
     font-weight: 400;
     font-size: 16px;
+  }
+  .benefits-list-items {
+    width: calc((100% - 3 * 24px) / 4);
   }
 }
 /* ================= MAIN SECTION 3 =================== */
@@ -498,6 +504,9 @@ input {
 @media screen and (min-width: 1158px) {
   .third-container {
     max-width: 1158px;
+  }
+  .team-list-item {
+    width: calc((100% - 3 * 24px) / 4);
   }
 }
 /* =================== MAIN SECTION 4================ */
@@ -714,7 +723,7 @@ input {
   .footer-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     column-gap: 24px;
     row-gap: 72px;
     padding-right: 108px;
@@ -732,6 +741,7 @@ input {
   }
   .footer-box {
     margin-bottom: 0;
+    align-items: flex-start;
   }
   .subscribe-input {
     width: 264px;
